@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
 /* /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,21 +134,17 @@ table {
 /* COMEÇO DO MEU CÓDIGO */
 
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 
-html,
+
+
+
+
+
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
+  justify-content: center;
+  width: 100%;
 }
 
 #header {
@@ -164,6 +159,7 @@ main {
   justify-content: space-evenly;
   width: 30%;
   margin-left: 25%;
+  gap: 3%;
 }
 
 .links {
@@ -171,6 +167,15 @@ main {
   font-family: "Noto Sans", serif;
   font-size: 27px;
   text-decoration: none;
+  border: 4px outset rgba(13, 93, 158, 0.982);
+  border-radius: 9px;
+  padding: 10px;
+}
+
+.links:hover {
+  background-color: black;
+  border-radius: 1px;
+  border-color: rgb(0, 162, 255);
 }
 
 #sectionCentral {
@@ -184,7 +189,7 @@ main {
 
 #footerLink {
   display: flex;
-  background-color: rgb(0, 84, 211);
+  background-color: rgba(12, 128, 223, 0.982);
   color: white;
   align-items: center;
   padding-left: 10px;
