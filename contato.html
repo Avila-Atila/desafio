@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portal Ford</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,12 +16,14 @@
       </nav>
     </header>
     <main>
-      <section class="sectionCentral">
-        <img src="./assets/imagem_1.jpg" alt="Nova Ford Ranger 2022" />
-        <p>
-          Esta é a nova Ranger Ford 2022. Verifique novidades
-          <a id="redirecionar" href="">aqui</a>
-        </p>
+      <section class="sectionForm">
+        <form action="submit" id="form">
+          <input type="text" class="formCampos" placeholder="NOME*" />
+          <input type="email" class="formCampos" placeholder="E-MAIL*" />
+          <input type="text" class="formCampos" placeholder="CPF*" />
+          <input type="tel" class="formCampos" placeholder="TELEFONE*" />
+          <button id="enviarForm" type="submit">Enviar!</button>
+        </form>
       </section>
     </main>
     <footer class="footer">
