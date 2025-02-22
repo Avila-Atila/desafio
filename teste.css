@@ -4,7 +4,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1em;
+  align-content: center;
+  gap: 1vh;
 }
 
 .header {
@@ -32,8 +33,12 @@ body {
   font-family: "Noto Sans", serif;
   font-size: 1.4rem;
   border: solid 2px white;
-  text-decoration: none;
+
   padding: 1%;
+}
+
+.links {
+  text-decoration: none;
 }
 
 .botoesLink:hover {
@@ -46,6 +51,7 @@ body {
 
 .principalSection {
   display: flex;
+
   flex-direction: column;
   align-items: center;
   img {
@@ -65,8 +71,13 @@ body {
 
 .linksFooter {
   display: flex;
-  width: 40%;
-  margin-left: 1%;
+  width: 70%;
+  margin-left: 2%;
+}
+
+#texto1 {
+  white-space: nowrap;
+  align-self: flex-start;
 }
 
 .botoesFooter {
@@ -81,4 +92,45 @@ body {
   margin-left: auto;
   margin-right: 2%;
   align-self: center;
+  width: 6%;
+}
+
+@media (max-width: 660px) {
+  body {
+    gap: 10vh;
+  }
+  #logoPrincipal {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 28px;
+    min-width: 28px;
+  }
+
+  .botoesLink {
+    flex-shrink: 30;
+    /* background-color: red; */
+  }
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 3;
+  }
+  .linksHeader {
+    gap: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 3;
+  }
+
+  .linksFooter {
+    flex-shrink: 1;
+    justify-content: space-evenly;
+  }
+  #logoFooter {
+    min-height: 40px;
+    min-width: 40px;
+    align-self: center;
+  }
 }
