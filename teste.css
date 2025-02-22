@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.6%;
+  border-bottom: solid 2px rgba(128, 128, 128, 0.39);
+  width: 100%;
+}
+
+.linksHeader {
+  display: flex;
+  gap: 8%;
+  margin-right: auto;
+  padding-right: 11.55%;
+}
+
+#logoPrincipal {
+  width: 8%;
+  margin-right: auto;
+}
+
+.botoesLink {
+  color: rgb(2, 111, 212);
+  font-family: "Noto Sans", serif;
+  font-size: 1.4rem;
+  border: solid 2px white;
+  text-decoration: none;
+  padding: 1%;
+}
+
+.botoesLink:hover {
+  border: solid 2px #303f9f;
+  border-style: inset;
+  background-color: #303f9f;
+  border-radius: 7px;
+  color: white;
+}
+
+.principalSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  background-color: #303f9f;
+  color: white;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.linksFooter {
+  display: flex;
+  width: 40%;
+  margin-left: 1%;
+}
+
+.botoesFooter {
+  transform: scale(0.5);
+}
+
+.botoesFooter:hover {
+  transform: scale(0.8);
+}
+
+#logoFooter {
+  margin-left: auto;
+  margin-right: 2%;
+  align-self: center;
+}
